@@ -1,270 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Satya Praveen Vemuri – Global Delivery Leader</title>
-  <meta name="description" content="Global Delivery Leader driving SaaS growth, digital transformation, and quality engineering excellence across BFSI, SaaS, and Telecom. Program & portfolio leadership, Agile/DevOps, QE, cloud and stakeholder management. Bengaluru, India.">
-  <meta name="robots" content="index, follow" />
-  <style>
-    :root{
-      --bg:#f6f9fc;
-      --text:#0f1b2d;
-      --muted:#516079;
-      --primary:#0b6efd;
-      --accent:#18b497;
-      --card:#ffffff;
-      --line:#e6eef6;
-      --shadow:0 6px 18px rgba(10,30,60,.08);
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color:var(--text); background:var(--bg); line-height:1.65;}
-    a{color:var(--primary); text-decoration:none}
-    .container{max-width:1100px; margin:0 auto; padding:0 20px}
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Satya Praveen Vemuri – Global Delivery Leader</title>
+<meta name="description" content="Global Delivery Leader driving SaaS growth, Digital Transformation and Quality Engineering across BFSI, SaaS and Telecom. Program & portfolio leadership, Agile/DevOps, QE, cloud delivery, stakeholder management. Bengaluru, India.">
+<style>
+:root{
+  --bg:#f6f9fc; --paper:#fff; --ink:#0f1b2d; --muted:#516079;
+  --line:#e6eef6; --primary:#0b6efd; --accent:#14b89a;
+  --shadow:0 10px 28px rgba(16,42,80,.08);
+  --maxw:1500px; /* a bit wider to reduce side gaps */
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);background:var(--bg);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;line-height:1.7}
+a{color:var(--primary);text-decoration:none}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 28px}
 
-    /* Nav */
-    header.navbar{
-      position:sticky; top:0; z-index:1000; background:#fffcc;
-    }
-    header.navbar{
-      background:rgba(255,255,255,.9); backdrop-filter:saturate(1.2) blur(8px);
-      border-bottom:1px solid var(--line);
-    }
-    .nav-inner{display:flex; align-items:center; justify-content:space-between; gap:24px; padding:14px 0;}
-    .brand{font-weight:800; letter-spacing:.2px; color:var(--text)}
-    nav.nav-links{display:flex; gap:20px; flex-wrap:wrap}
-    nav.nav-links a{color:var(--text); opacity:.8}
-    nav.nav-links a:hover{opacity:1; color:var(--primary)}
+header.navbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px 0}
+.brand{font-weight:800;color:var(--ink)}
+nav.nav-links{display:flex;gap:24px;flex-wrap:wrap}
+nav.nav-links a{color:var(--ink);opacity:.85}
+nav.nav-links a:hover{opacity:1;color:var(--primary)}
 
-    /* Hero */
-    .hero{
-      background: linear-gradient(180deg,#fff, #f7fbff 60%, #f6f9fc 100%);
-      padding:84px 0 48px; border-bottom:1px solid var(--line);
-    }
-    .hero h1{font-size:44px; line-height:1.12; margin:0 0 8px}
-    .hero .lead{color:#394a6a; font-size:18px; margin:0 0 22px}
-    .badges{display:flex; gap:10px; flex-wrap:wrap; margin:10px 0 22px}
-    .badge{
-      background:#fff; border:1px solid var(--line); padding:6px 10px; border-radius:999px;
-      font-size:13px; color:#4d5d7a; box-shadow:var(--shadow);
-    }
-    .btn{
-      display:inline-block; padding:12px 18px; border-radius:10px; font-weight:600;
-      background:linear-gradient(90deg, var(--primary), var(--accent)); color:#fff; box-shadow:var(--shadow);
-    }
-    .btn:hover{filter:brightness(1.05)}
+.hero{padding:96px 0 72px;background:linear-gradient(180deg,#fff,#f7fbff 60%,#f6f9fc 100%);
+  border-bottom:1px solid var(--line)}
+.hero h1{font-size:46px;line-height:1.08;margin:0 0 10px}
+.hero .lead{color:#3b4a69;font-size:20px;max-width:1050px;margin:0 0 24px}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 24px}
+.badge{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 12px;font-size:13px;color:#465a7a;box-shadow:var(--shadow)}
+.cta{display:inline-block;padding:12px 18px;border-radius:12px;font-weight:700;color:#fff;
+  background:linear-gradient(90deg,var(--primary),var(--accent));box-shadow:var(--shadow)}
 
-    /* Sections */
-    section{padding:64px 0}
-    h2{font-size:26px; margin:0 0 18px}
-    .grid{display:grid; gap:18px}
-    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
-    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
-    @media (max-width: 900px){.grid.cols-3{grid-template-columns:1fr 1fr}}
-    @media (max-width: 640px){.grid.cols-3,.grid.cols-2{grid-template-columns:1fr} .hero h1{font-size:36px}}
+section{padding:92px 0} /* a little more breathing room */
+h2{font-size:30px;margin:0 0 22px}
+.grid{display:grid;gap:26px}
+.grid.cols-3{grid-template-columns:repeat(3,1fr)}
+.grid.cols-2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:1200px){.grid.cols-3{grid-template-columns:1fr 1fr}}
+@media(max-width:780px){.grid.cols-3,.grid.cols-2{grid-template-columns:1fr}.hero h1{font-size:36px}}
 
-    /* Cards */
-    .card{
-      background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; box-shadow:var(--shadow);
-    }
-    .card h3{margin:0 0 8px; font-size:18px}
-    .muted{color:var(--muted); font-size:15px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:26px;box-shadow:var(--shadow)}
+.card h3{margin:0 0 12px;font-size:18px}
+.muted{color:var(--muted);font-size:16px}
 
-    /* Skills */
-    .skill{margin:10px 0}
-    .skill .label{display:flex; justify-content:space-between; color:var(--muted); font-size:14px}
-    .bar{height:10px; background:#edf3fb; border-radius:999px; overflow:hidden; border:1px solid var(--line)}
-    .fill{height:100%}
-    .fill[data-w="90"]{width:90%; background:linear-gradient(90deg,#0b6efd,#18b497)}
-    .fill[data-w="85"]{width:85%; background:linear-gradient(90deg,#0b6efd,#18b497)}
-    .fill[data-w="80"]{width:80%; background:linear-gradient(90deg,#0b6efd,#18b497)}
+.skill{margin:18px 0}
+.skill .label{color:var(--muted);font-size:16px;margin-bottom:10px}
+.bar{height:12px;background:#edf3fb;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.fill{height:100%;background:linear-gradient(90deg,var(--primary),var(--accent))}
+.fill[data-w="90"]{width:90%}
 
-    footer{padding:28px 0; color:#5a6a88; border-top:1px solid var(--line)}
-    .contact a{color:var(--primary)}
-  </style>
+footer{padding:40px 0;border-top:1px solid var(--line);color:#5a6a88}
+</style>
 </head>
 <body id="top">
+<header class="navbar"><div class="container nav-inner">
+  <a class="brand" href="#top">Satya Praveen</a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#about">About</a><a href="#insights">Insights</a><a href="#expertise">Expertise</a><a href="#projects">Projects</a>
+    <a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a>
+  </nav>
+</div></header>
 
-<header class="navbar">
-  <div class="container nav-inner">
-    <a class="brand" href="#top">Satya Praveen</a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="#about">About</a>
-      <a href="#expertise">Expertise</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
+<section class="hero"><div class="container">
+  <h1>Global Delivery Leader</h1>
+  <p class="lead">Driving SaaS growth, Digital Transformation & Quality Engineering across BFSI, SaaS & Telecom. 20+ years orchestrating programs, cloud/DevOps and high‑velocity delivery at scale.</p>
+  <div class="badges">
+    <span class="badge">BFSI · SaaS · Telecom · Higher‑Ed</span>
+    <span class="badge">Agile/DevOps · TMMi · TCoE</span>
+    <span class="badge">Portfolio & Stakeholder leadership</span>
   </div>
-</header>
+  <a class="cta" href="#contact">Get in Touch</a>
+</div></section>
 
-<section class="hero">
-  <div class="container">
-    <h1>Global Delivery Leader</h1>
-    <p class="lead">Driving SaaS growth, Digital Transformation & Quality Engineering across BFSI, SaaS & Telecom. 20+ years orchestrating programs, cloud/DevOps and high‑velocity delivery at scale.</p>
-    <div class="badges">
-      <span class="badge">BFSI · SaaS · Telecom · EdTech</span>
-      <span class="badge">Agile/DevOps · TMMi · TCoE</span>
-      <span class="badge">Stakeholder & CXO management</span>
+<section id="about"><div class="container"><h2>About</h2>
+  <div class="card">
+    <p class="muted">As a Global Delivery Leader, I help organizations scale business growth and digital transformation with precision, speed, and purpose. With 20+ years of experience delivering high-impact projects and programs across BFSI, SaaS, Telecom, and Higher Education, I specialize in orchestrating complex, cross-functional initiatives that align deeply with strategic business goals.</p>
+    <p class="muted">My value lies in translating vision into velocity—leading multi million dollar enterprise programs, embedding Agile/DevOps frameworks &amp; driving quality engineering excellence to accelerate product delivery and business outcomes. I've partnered directly with Portfolio Heads, CXOs and CEOs across Canada, UK, the Middle East &amp; India to enable cloud migrations, compliance transformations (AML/KYC).</p>
+    <p class="muted">Whether it’s building global delivery models, leading 100+ member teams, or reducing manual QA effort by 40% through a Center of Excellence, I bring a track record of operational impact and strategic clarity.</p>
+    <p class="muted">Currently pursuing an Executive MBA at ISB with global immersion at INSEAD, I’m sharpening my leadership toolkit to drive enterprise agility, stakeholder value, and team alignment in rapidly evolving tech ecosystems.</p>
+    <h3>What Sets Me Apart</h3>
+    <p class="muted">I thrive in roles that demand strategic foresight, operational rigor, and collaborative problem-solving—and I’m driven by the opportunity to simplify complexity, inspire teams, and enable smarter decisions.</p>
+    <p class="muted">My strength lies in bridging business vision with execution excellence, blending deep technical understanding with sharp stakeholder intuition.</p>
+    <h3>Key Achievements</h3>
+    <ul class="muted">
+      <li>$50M+ Program Leadership: Successfully led enterprise-scale transformation programs, ensuring delivery precision, stakeholder alignment, and accelerated business outcomes.</li>
+      <li>Global Delivery Excellence: Built and scaled delivery centers across geographies, leading 100+ member teams and creating sustainable governance models.</li>
+      <li>Customer-Centric Innovation: Achieved 95%+ CSAT by embedding a customer-first culture and driving continuous product and service improvements.</li>
+      <li>Onsite Leadership: Over 5 years of onsite experience in Canada and the Middle East, directly engaging with C-suite leaders to shape and deliver transformation agendas.</li>
+      <li>Strategic Transformation Partner: Delivered compliance and cloud modernization programs with measurable impact—cutting timelines by 15% and improving stakeholder satisfaction by 30%.</li>
+    </ul>
+    <p class="muted"><em>Let’s connect if you’re looking to scale global delivery, elevate QE maturity, or turn transformation ambition into tangible business value.</em></p>
+  </div>
+</div></section>
+
+<section id="insights"><div class="container"><h2>Insights</h2>
+  <div class="card">
+    <ul class="muted">
+      <li>Strategy → Execution: translate vision into measurable outcomes with OKRs and clear KPIs.</li>
+      <li>Scale with Governance: build predictable, repeatable delivery models across regions.</li>
+      <li>Customer‑First QE: TCoE & automation lift product quality and reduce manual effort.</li>
+      <li>Transparent Metrics: cadence rituals, dashboards and risk/dependency management.</li>
+      <li>Global Collaboration: hands‑on with CXO stakeholders across India, Canada & Middle East.</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="expertise"><div class="container"><h2>Domain & Functional Expertise</h2>
+  <div class="grid cols-3">
+    <div class="card"><h3>BFSI & Fintech</h3><p class="muted">KYC, RegTech, Digital Onboarding, Credit Cards, Retail & Commercial Banking.</p></div>
+    <div class="card"><h3>SaaS & Platforms</h3><p class="muted">Legacy → AI‑powered SaaS, multi‑tenant readiness, roadmap & go‑to‑market.</p></div>
+    <div class="card"><h3>Quality Engineering</h3><p class="muted">TMMi, TCoE, automation at scale; 40% manual reduction; CSAT 95%+.</p></div>
+    <div class="card"><h3>Delivery & Governance</h3><p class="muted">Program/portfolio mgmt, OKRs, risk & dependency mgmt, KPI dashboards.</p></div>
+    <div class="card"><h3>Cloud & DevOps</h3><p class="muted">AWS, Jenkins, Azure DevOps, CI/CD, observability & release readiness.</p></div>
+    <div class="card"><h3>Stakeholder Management</h3><p class="muted">CXO engagement, vendor optimization, change & communications.</p></div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="container"><h2>Key Achievements & Programs</h2>
+  <div class="grid cols-3">
+    <div class="card"><h3>Portfolio Leadership</h3><p class="muted">Directed $50M+ programs across regions; aligned governance & OKRs; improved visibility and cadence.</p></div>
+    <div class="card"><h3>SaaS Transformation</h3><p class="muted">Co‑led legacy platform → AI‑powered SaaS; improved time‑to‑market and customer experience.</p></div>
+    <div class="card"><h3>Velocity & Reliability</h3><p class="muted">Enterprise CI/CD adoption (Jenkins, ADO); cycle time ↓35%; release delays ↓25%.</p></div>
+    <div class="card"><h3>Global Engagements</h3><p class="muted">Onsite leadership across Canada (RBC) and Middle East (SAB, GIB, QIB) with direct CEO/CXO collaboration.</p></div>
+    <div class="card"><h3>QE Excellence</h3><p class="muted">Built TCoE; standardized processes; 40% manual reduction; CSAT &gt;95% across strategic accounts.</p></div>
+    <div class="card"><h3>Scale‑up</h3><p class="muted">Scaled delivery center from 7 → 140+; established cadence, KPIs and transparent reporting.</p></div>
+  </div>
+</div></section>
+
+<section id="skills"><div class="container"><h2>Technical & Leadership Skills</h2>
+  <div class="grid cols-2">
+    <div class="card">
+      <div class="skill"><div class="label">Delivery & Program Management</div><div class="bar"><div class="fill" data-w="90"></div></div></div>
+      <div class="skill"><div class="label">Stakeholder & Client Management</div><div class="bar"><div class="fill" data-w="90"></div></div></div>
+      <div class="skill"><div class="label">Leadership & Organizational Growth</div><div class="bar"><div class="fill" data-w="90"></div></div></div>
+      <div class="skill"><div class="label">Agile / SAFe / Governance</div><div class="bar"><div class="fill" data-w="90"></div></div></div>
+      <div class="skill"><div class="label">QE Strategy & Automation</div><div class="bar"><div class="fill" data-w="90"></div></div></div>
     </div>
-    <a class="btn" href="#contact">Get in Touch</a>
-  </div>
-</section>
-
-<section id="about">
-  <div class="container">
-    <h2>About</h2>
-    <div class="grid cols-2">
-      <div class="card">
-        <p class="muted">
-          Global delivery leader with extensive experience executing enterprise programs across Cloud, Compliance and Digital Transformation.
-          Known for aligning business strategy to execution, embedding Agile/DevOps and building QE Centers of Excellence to improve release velocity and quality.
-          Collaborated closely with CEOs, CXOs, Product and Engineering leaders to deliver measurable outcomes.
-        </p>
-        <ul class="muted">
-          <li>Led <strong>$25M+</strong> enterprise programs across BFSI, SaaS & Telecom</li>
-          <li>Reduced release time by <strong>35%</strong> via CI/CD and automation</li>
-          <li>Scaled offshore delivery from <strong>7 → 100+</strong> with governance & cadence</li>
-          <li>Delivered Tier‑1 banking programs (KYC, RegTech, Digital Onboarding, modernization)</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Quick Facts</h3>
-        <ul class="muted">
-          <li><strong>Location:</strong> Bengaluru, India</li>
-          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/satyapraveen-delivery-leader" target="_blank" rel="noopener">satyapraveen-delivery-leader</a></li>
-          <li><strong>Email:</strong> <a href="mailto:satya_jason@yahoo.com">satya_jason@yahoo.com</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="expertise">
-  <div class="container">
-    <h2>Domain & Functional Expertise</h2>
-    <div class="grid cols-3">
-      <div class="card"><h3>BFSI & Fintech</h3><p class="muted">KYC, RegTech, Digital Onboarding, Credit Cards, Retail & Commercial Banking.</p></div>
-      <div class="card"><h3>SaaS & Platforms</h3><p class="muted">Legacy → AI‑powered SaaS, multi‑tenant readiness, roadmap & go‑to‑market.</p></div>
-      <div class="card"><h3>Quality Engineering</h3><p class="muted">TMMi, TCoE, automation at scale, CX‑focused QE uplift to 95%+ CSAT.</p></div>
-      <div class="card"><h3>Delivery & Governance</h3><p class="muted">Program/portfolio management, OKRs, risk & dependency management.</p></div>
-      <div class="card"><h3>Cloud & DevOps</h3><p class="muted">AWS, Jenkins, Azure DevOps, CI/CD, observability & release readiness.</p></div>
-      <div class="card"><h3>Stakeholder Management</h3><p class="muted">CXO engagement, vendor optimization, change & communications.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="projects">
-  <div class="container">
-    <h2>Key Achievements & Programs</h2>
-    <div class="grid cols-3">
-      <div class="card"><h3>Portfolio Leadership</h3><p class="muted">Directed $25M+ programs across regions; aligned governance & OKRs; improved visibility and cadence.</p></div>
-      <div class="card"><h3>Velocity & Reliability</h3><p class="muted">Enterprise CI/CD (Jenkins, Azure DevOps) adopted; cycle time ↓35%; release delays ↓25%.</p></div>
-      <div class="card"><h3>Scale‑up</h3><p class="muted">Built offshore delivery center from 7 → 100+; standardized processes; transparent KPIs.</p></div>
-      <div class="card"><h3>BFSI Programs</h3><p class="muted">Delivered 8+ Tier‑1 initiatives across KYC, RegTech, onboarding, and platform modernization in Middle East.</p></div>
-      <div class="card"><h3>SaaS Transformation</h3><p class="muted">Co‑led legacy platform → AI‑powered SaaS; improved time‑to‑market and customer experience.</p></div>
-      <div class="card"><h3>QE Excellence</h3><p class="muted">Launched TCoE and automation at scale; 40% reduction in manual testing; CSAT >95%.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="skills">
-  <div class="container">
-    <h2>Technical & Leadership Skills</h2>
-    <div class="grid cols-2">
-      <div class="card">
-        <div class="skill"><div class="label"><span>AWS / Cloud</span><span>90%</span></div><div class="bar"><div class="fill" data-w="90"></div></div></div>
-        <div class="skill"><div class="label"><span>DevOps (CI/CD, Jenkins, ADO)</span><span>85%</span></div><div class="bar"><div class="fill" data-w="85"></div></div></div>
-        <div class="skill"><div class="label"><span>Agile / SAFe / Governance</span><span>85%</span></div><div class="bar"><div class="fill" data-w="85"></div></div></div>
-        <div class="skill"><div class="label"><span>QE Strategy & Automation</span><span>80%</span></div><div class="bar"><div class="fill" data-w="80"></div></div></div>
-      </div>
-      <div class="card">
-        <ul class="muted">
-          <li><strong>Cloud & DevOps:</strong> AWS, Jenkins, GitHub/GitLab, CI/CD</li>
-          <li><strong>Data & Code:</strong> Python, JavaScript, SQL Server, MongoDB</li>
-          <li><strong>Management:</strong> Azure DevOps, Jira, Confluence, TFS</li>
-          <li><strong>Methods:</strong> Agile (Scrum/Kanban/SAFe), TMMi, TCoE, CMMi</li>
-          <li><strong>Domains:</strong> BFSI & Fintech, SaaS, Cyber Financials, EdTech</li>
-        </ul>
-      </div>
+    <div class="card">
+      <ul class="muted">
+        <li><strong>Cloud & DevOps:</strong> AWS, Jenkins, GitHub/GitLab, CI/CD</li>
+        <li><strong>Data & Code:</strong> JavaScript, Python, SQL Server, MongoDB</li>
+        <li><strong>Management Tools:</strong> Azure DevOps, Jira, Confluence, TFS</li>
+        <li><strong>Methods:</strong> Agile (Scrum/Kanban/SAFe), TMMi, TCoE, CMMi</li>
+        <li><strong>Domains:</strong> BFSI & Fintech, SaaS, Cyber Financials, EdTech</li>
+      </ul>
     </div>
   </div>
-</section>
+</div></section>
 
-<section id="experience">
-  <div class="container">
-    <h2>Experience</h2>
-    <div class="grid cols-2">
-      <div class="card">
-        <h3>Sr. Consultant (Delivery Head) — Infuse Consulting India Pvt. Ltd.</h3>
-        <p class="muted">Apr 2021 – Present · SaaS & Digital Transformation</p>
-        <ul class="muted">
-          <li>Owned enterprise delivery across cloud, compliance and modernization.</li>
-          <li>Embedded Agile/DevOps; improved throughput & release predictability.</li>
-          <li>Partnered with CEOs/CXOs to align delivery with strategic outcomes.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Delivery Manager — Maveric Systems Limited</h3>
-        <p class="muted">Feb 2017 – Apr 2021 · BFSI</p>
-        <ul class="muted">
-          <li>Delivered 8+ Tier‑1 banking programs (KYC, RegTech, Digital Onboarding).</li>
-          <li>Scaled distributed teams; improved stakeholder satisfaction by 30%.</li>
-        </ul>
-      </div>
-      <div class="card"><h3>Manager IT — Karvy Data Management Services</h3><p class="muted">Sep 2015 – Oct 2016</p></div>
-      <div class="card"><h3>Quality Lead — Capgemini</h3><p class="muted">Dec 2014 – Jul 2015</p></div>
-      <div class="card"><h3>Program/Test Specialist — IBM</h3><p class="muted">Mar 2010 – Dec 2014</p></div>
-      <div class="card"><h3>End‑to‑End Program Lead — Verizon</h3><p class="muted">Jun 2008 – Sep 2009</p></div>
-      <div class="card"><h3>Test Analyst — iGATE Global Solutions</h3><p class="muted">May 2006 – Apr 2008</p></div>
-      <div class="card"><h3>QA Associate — softProjex</h3><p class="muted">Jan 2004 – Apr 2006</p></div>
-    </div>
+<section id="experience"><div class="container"><h2>Experience</h2>
+  <div class="grid cols-2">
+    <div class="card"><h3>Sr. Consultant (Delivery Head) — Infuse Consulting India Pvt. Ltd.</h3><p class="muted">Apr 2021 – Present · SaaS & Digital Transformation</p>
+      <ul class="muted"><li>End‑to‑end ownership across cloud, compliance & modernization.</li><li>Embedded Agile/DevOps; improved throughput & release predictability.</li><li>Aligned delivery with strategic outcomes through CXO engagement.</li></ul></div>
+    <div class="card"><h3>Delivery Manager — Maveric Systems Limited</h3><p class="muted">Feb 2017 – Apr 2021 · BFSI</p>
+      <ul class="muted"><li>Delivered 8+ Tier‑1 banking programs (KYC, RegTech, Digital Onboarding).</li><li>Scaled distributed teams; improved stakeholder satisfaction by 30%.</li></ul></div>
+    <div class="card"><h3>Manager IT — Karvy Data Management Services</h3><p class="muted">Sep 2015 – Oct 2016</p></div>
+    <div class="card"><h3>Quality Lead — Capgemini</h3><p class="muted">Dec 2014 – Jul 2015</p></div>
+    <div class="card"><h3>Program/Test Specialist — IBM</h3><p class="muted">Mar 2010 – Dec 2014</p></div>
+    <div class="card"><h3>End‑to‑End Program Lead — Verizon</h3><p class="muted">Jun 2008 – Sep 2009</p></div>
+    <div class="card"><h3>Test Analyst — iGATE Global Solutions</h3><p class="muted">May 2006 – Apr 2008</p></div>
+    <div class="card"><h3>QA Associate — softProjex</h3><p class="muted">Jan 2004 – Apr 2006</p></div>
   </div>
-</section>
+</div></section>
 
-<section id="education">
-  <div class="container">
-    <h2>Education & Certifications</h2>
-    <div class="grid cols-2">
-      <div class="card">
-        <ul class="muted">
-          <li><strong>EMBA (Strategy & Leadership)</strong> — ISB / INSEAD (2024–2025)</li>
-          <li><strong>PG in Product Management</strong> — Duke CE (2023–2024)</li>
-          <li><strong>B.Com</strong> — Osmania University</li>
-        </ul>
-      </div>
-      <div class="card">
-        <ul class="muted">
-          <li>Gen AI for Project Management; AI for Product Management; AI Foundations</li>
-          <li>Product Strategy (PSC)™; SMAC™; SFC; Agile Scrum Master</li>
-          <li>DevOps Foundations; Agile Project Management</li>
-        </ul>
-      </div>
-    </div>
+<section id="education"><div class="container"><h2>Education & Certifications</h2>
+  <div class="grid cols-2">
+    <div class="card"><ul class="muted">
+      <li><strong>Executive MBA (Strategy & Leadership)</strong> — ISB / INSEAD (2024–2025)</li>
+      <li><strong>PG in Product Management</strong> — Duke CE (2023–2024)</li>
+      <li><strong>B.Com</strong> — Osmania University</li>
+    </ul></div>
+    <div class="card"><ul class="muted">
+      <li>Gen AI for Project Management; AI for Product Management; AI Foundations</li>
+      <li>Product Strategy (PSC)™; SMAC™; SFC; Agile Scrum Master</li>
+      <li>DevOps Foundations; Agile Project Management; PMP/PMI coursework</li>
+    </ul></div>
   </div>
-</section>
+</div></section>
 
-<section id="contact">
-  <div class="container">
-    <h2>Contact</h2>
-    <div class="card contact">
-      <p>Email: <a href="mailto:satya_jason@yahoo.com">satya_jason@yahoo.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/satyapraveen-delivery-leader" target="_blank" rel="noopener">satyapraveen-delivery-leader</a></p>
-      <p>Location: Bengaluru, India</p>
-    </div>
-  </div>
-</section>
+<section id="contact"><div class="container"><h2>Contact</h2><div class="card">
+  <p>Email: <a href="mailto:satya_jason@yahoo.com">satya_jason@yahoo.com</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/satyapraveen-delivery-leader" target="_blank" rel="noopener">satyapraveen‑delivery‑leader</a></p>
+  <p>Location: Bengaluru, India</p>
+</div></div></section>
 
-<footer>
-  <div class="container">
-    © <span id="yr"></span> Satya Praveen Vemuri · Global Delivery Leader
-  </div>
-</footer>
-
+<footer><div class="container">© <span id="yr"></span> Satya Praveen Vemuri · Global Delivery Leader</div></footer>
 <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
-</body>
-</html>
+</body></html>
